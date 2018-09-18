@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 
  */
@@ -10,6 +12,7 @@
  */
 public class AddressBook {
 
+	ArrayList<BuddyInfo> addressBook  = new ArrayList<BuddyInfo>();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,13 +20,13 @@ public class AddressBook {
 
 	}
 	
-	public BuddyInfo addBuddy(String name) {
-		return new BuddyInfo(name);
+	public void addBuddy(String name) {
+		addressBook.add(new BuddyInfo(name));
 		
 	}
 	
-	public BuddyInfo removeBuddy(String name) {
-		return new BuddyInfo(name);
+	public void removeBuddy(int index) {
+		addressBook.remove(index);
 		
 	}
 	
