@@ -17,6 +17,13 @@ public class BuddyInfo {
 		setName(string);
 	}
 
+	public BuddyInfo(String strname, String stradd, String strnum) {
+		// TODO Auto-generated constructor stub
+		name = strname;
+		address = stradd;
+		phoneNumber = strnum;
+	}
+
 	private String getName() {
 		return name;
 	}
