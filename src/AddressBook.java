@@ -12,7 +12,13 @@ import java.util.ArrayList;
  */
 public class AddressBook {
 
-	ArrayList<BuddyInfo> addressBook  = new ArrayList<BuddyInfo>();
+	private ArrayList<BuddyInfo> buddyInfo;
+	
+	public AddressBook() {
+		this.buddyInfo = new ArrayList<BuddyInfo>();
+	}
+	
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,16 +28,18 @@ public class AddressBook {
 		addressBook.addBuddy(buddy);
 		addressBook.removeBuddy(0);
 		
+		// Test Change
+		
 
 	}
 	
 	public void addBuddy(BuddyInfo name) {
-		addressBook.add(name);
+		buddyInfo.add(name);
 		
 	}
 	
 	public void removeBuddy(int index) {
-		addressBook.remove(index);
+		buddyInfo.remove(index);
 		
 	}
 	
